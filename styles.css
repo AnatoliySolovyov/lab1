@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+/* Горизонтальное меню */
+.horizontal-menu {
+    background-color: #0000FF;
+    padding: 0;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.horizontal-menu .menu-item {
+    display: inline-block;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+    height: 100%;
+    line-height: 50px;
+    transition: background-color 0.3s ease, font-weight 0.3s ease, color 0.3s ease;
+}
+
+.horizontal-menu .menu-item:hover {
+    background-color: white;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Вертикальное меню */
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+}
+
+.vertical-menu .menu-item {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    text-align: left;
+    border: 1px solid #0000FF;
+    text-decoration: none;
+    color: #0000FF;
+    font-weight: normal;
+}
+
+.vertical-menu .menu-item:hover {
+    background-color: #f0f0f0;
+    color: #0000FF;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
